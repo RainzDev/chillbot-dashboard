@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>ChillBot - Home</title>
+		<
+		<meta content="ChillBot" property="og:title" />
+		<meta content="A Discord bot with everything you need!", property="og:description" />
+		<meta content="https://chillbot.xyz" property="og:url" />
+		<meta content="https://chillbot.xyz/chillbot.webp" property="og:image" />
+		<meta content="#A020F0" data-react-helmet="true" name="theme-color" />
+		<meta charset="utf-8" />
+		<meta name="description", content="A Discord bot with everything you need!">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">What is ChillBot</a></li>
+							<li><a href="#two">What does it do</a></li>
+							<li><a href="#three">Join the support server</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>ChillBot</h1>
+							<p>A Discord Bot with everything you need!</p>
+							<ul class="actions">
+								<li><a href="https://discord.com/oauth2/authorize?client_id=848384657774084107&permissions=281541732550&scope=bot%20applications.commands" class="button scrolly">Invite Bot</a></li>
+								{% if session_login %}
+									<li><a href="/servers" class="button scrolly">Manage Servers</a></li>
+								{% else %}
+									<li><a href="https://discord.com/api/oauth2/authorize?client_id=848384657774084107&redirect_uri=https%3A%2F%2Fchillbot.xyz%2Foauth%2Fcallback&response_type=code&scope=identify%20guilds" class="button scrolly">Login</a></li>
+								{% endif %}
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<div class="inner">
+							<h2>What is ChillBot</h2>
+							<p>ChillBot is a multipurpose Discord bot with everything you need. It can play any music, handle moderation, automated configurations, etc.</p>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>What does it do</h2>
+							<p>ChillBot contains many features. Some features can be helpful for you. Read below for more information about some of the features.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-headphones"></span>
+									<h3>Music</h3>
+									<p>ChillBot can play anything you want. It can be K-POP, Rap, or any other music genres!</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-exclamation-circle"></span>
+									<h3>Moderation</h3>
+									<p>ChillBot can handle moderation in your server! You can use the bot to kick, ban, or timeout the member(s). ChillBot also has an auto-mod feature located in the configurations.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>And more...</h3>
+									<p>ChillBot has many other features that you should try. What are you waiting for? Try it out!</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Join the support server</h2>
+							<ul>
+								<li><a href="https://discord.gg/wM8MseKTPs" class="button scrolly">Discord Invite</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; ChillBot. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+		<!-- Scripts -->
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/jquery.scrollex.min.js"></script>
+			<script src="static/js/jquery.scrolly.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+	</body>
+</html>
