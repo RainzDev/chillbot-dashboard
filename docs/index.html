@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    />
+  </head>
+  <body>
+    <div data-app id="main">Please wait...</div>
+    <script>
+      window.$docsify = {
+        loadSidebar: true,
+        subMaxLevel: 2,
+        alias: {
+          '/.*/_sidebar.md': '/_sidebar.md',
+        },
+        el: '#main',
+        coverpage: true,
+        search: 'auto',
+
+        search: [
+          '/',
+        ],
+
+        search: {
+          maxAge: 8400000,
+          paths: 'auto',
+          placeholder: 'Type to search',
+          depth: 2,
+          hideOtherSidebarContent: false,
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script> -->
+  </body>
+</html>
